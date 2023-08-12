@@ -75,7 +75,7 @@ const Login = () => {
   return (
     <>
       <Helmet>
-        <title>Edubin | Login</title>
+        <title>E-commerce | Login</title>
       </Helmet>
       <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-10 justify-center items-center pt-20 ">
         <div className="">

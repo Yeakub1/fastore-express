@@ -10,13 +10,8 @@ const Navbar = () => {
     const [navbar, setNavbar] = useState(false);
   const [cart] = useCart()
   
-   const { user, logOut } = useContext(AuthContext);
+   const { user } = useContext(AuthContext);
 
-   const handleLogOut = () => {
-     logOut()
-       .then((result) => {})
-       .catch((error) => console.log(error));
-   };
 
   return (
     <nav className="w-full bg-white shadow fixed z-30 top-0 left-0">
@@ -70,7 +65,7 @@ const Navbar = () => {
             navbar ? "block" : "hidden"
           }`}
         >
-          <ul className="items-center justify-center text-center text-lg space-y-8 md:flex md:space-x-6 md:space-y-0 md:-ml-20">
+          <ul className="items-center justify-center text-center text-lg space-y-8 md:flex md:space-x-6 md:space-y-0 md:-ml-20 uppercase">
             <li className="">
               <ActiveLink to="/">Home</ActiveLink>
             </li>
@@ -98,16 +93,16 @@ const Navbar = () => {
             navbar ? "block" : "hidden"
           }`}
         >
-          <ul className="items-center justify-center text-lg space-y-8 md:flex md:space-x-6 md:space-y-0 ">
+          <ul className="items-center justify-center text-lg space-y-8 md:flex md:space-x-6 md:space-y-0 uppercase">
             {user?.email ? (
               <>
                 <li>
                   <ActiveLink className="mr-3" to="/myCollege">
-                  Dashbord
+                    Dashbord
                   </ActiveLink>
                 </li>
                 <li>
-                  <button onClick={handleLogOut}>Log out</button>
+                 
                 </li>
                 <Link
                   to="userprofile"
@@ -126,11 +121,6 @@ const Navbar = () => {
               <ActiveLink to="/login">LogIn</ActiveLink>
             )}
           </ul>
-          {/* <ul className="items-center flex justify-center mx-auto text-lg gap-3">
-            <button className="px-5 py-2 bg-[#004651] hover:bg-white hover:text-black text-white rounded-md  btn-outline btn">
-              <Link to="login">Login</Link>
-            </button>
-          </ul> */}
         </div>
       </div>
     </nav>

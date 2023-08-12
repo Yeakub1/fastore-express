@@ -31,7 +31,7 @@ const Signup = () => {
       const loggedUser = result.user;
       toast.success("Signup Successfully");
       const saveUser = { name: data.name, email: data.email };
-      fetch("https://agency-server-ten.vercel.app/users", {
+      fetch("http://localhost:5173/", {
         method: "POST",
         headers: {
           "content-type": "application/json",
@@ -53,7 +53,7 @@ const Signup = () => {
   return (
     <>
       <Helmet>
-        <title>Edubin | Signup</title>
+        <title>E-commerce | Signup</title>
       </Helmet>
       <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-10 justify-center items-center pt-20 ">
         <div className="">
