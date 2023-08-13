@@ -55,7 +55,7 @@ const Login = () => {
           name: loginUser.displayName,
           email: loginUser.email,
         };
-        fetch("http://localhost:5000/users", {
+        fetch("https://e-commerce-server-kappa-topaz.vercel.app/users", {
           method: "POST",
           headers: {
             "content-type": "application/json",
