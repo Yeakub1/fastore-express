@@ -17,7 +17,6 @@ const Banner = () => {
             <div className="">
               <img
                 src={text}
-                // className="h-60 md:h-full"
                 alt=""
                 draggable="false"
               />
@@ -25,7 +24,6 @@ const Banner = () => {
             <div className="">
               <img
                 src={image}
-                // className="h-60 md:h-full"
                 alt=""
                 draggable="false"
               />
