@@ -6,6 +6,7 @@ import Signup from "../Authentication/Signup";
 import UserProfile from "../Pages/UserProfile/UserProfile";
 import ResetPassword from "../Authentication/ResetPassword";
 import PrivateRoutes from "./PrivateRoutes";
+import AllProducts from "../Pages/AllProducts/AllProducts";
 
 const router = createBrowserRouter([
   {
@@ -15,6 +16,10 @@ const router = createBrowserRouter([
       {
         path: "/",
         element: <Home />,
+      },
+      {
+        path: "/products",
+        element: <AllProducts/>
       },
       {
         path: "/login",

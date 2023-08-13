@@ -18,7 +18,8 @@ const Blog = () => {
             <img
               src={food1}
               alt=""
-              className=" scale-95 hover:scale-100 ease-in duration-500 h-96 w-full"
+              draggable="false"
+              className=" scale-95 hover:scale-100 ease-in duration-500 h-96 w-full rounded-md"
             />
             <div className="p-2">
               <p className="text-[#8E350B] text-xl font-bold mt-4">FAST FOOD</p>
@@ -31,7 +32,8 @@ const Blog = () => {
             <img
               src={food2}
               alt=""
-              className=" scale-95 hover:scale-100 ease-in duration-500 h-96 w-full"
+              draggable="false"
+              className="scale-95 hover:scale-100 ease-in duration-500 h-96 w-full rounded-md"
             />
             <div className="p-2">
               <p className="text-[#8E350B] text-xl font-bold mt-4">Dinner</p>
@@ -44,7 +46,8 @@ const Blog = () => {
             <img
               src={food3}
               alt=""
-              className="scale-95 hover:scale-100 ease-in duration-500 h-96 w-full"
+              draggable="false"
+              className="scale-95 hover:scale-100 ease-in duration-500 h-96 w-full rounded-md"
             />
             <div className="p-2">
               <p className="text-[#8E350B] text-xl font-bold mt-4">

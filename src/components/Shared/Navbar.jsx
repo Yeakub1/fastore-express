@@ -70,7 +70,7 @@ const Navbar = () => {
               <ActiveLink to="/">Home</ActiveLink>
             </li>
             <li className="">
-              <ActiveLink to="/collage">Product</ActiveLink>
+              <ActiveLink to="/products">Product</ActiveLink>
             </li>
             <li>
               <Link to="/dashboard/mycart">
