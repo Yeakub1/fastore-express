@@ -32,7 +32,9 @@ const router = createBrowserRouter([
           </PrivateRoutes>
         ),
         loader: ({ params }) =>
-          fetch(`http://localhost:5000/menu/${params.id}`),
+          fetch(
+            `https://e-commerce-server-kappa-topaz.vercel.app/menu/${params.id}`
+          ),
       },
       {
         path: "/login",
@@ -66,7 +68,7 @@ const router = createBrowserRouter([
     children: [
       {
         path: "allusers",
-        element: <AllUsers/>
+        element: <AllUsers />,
       },
     ],
   },

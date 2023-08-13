@@ -12,9 +12,12 @@ const AllUsers = () => {
   });
 
   const handleMakeAdmin = (user) => {
-    fetch(`http://localhost:5000/users/${user._id}`, {
-      method: "PATCH",
-    })
+    fetch(
+      `https://e-commerce-server-kappa-topaz.vercel.app/users/${user._id}`,
+      {
+        method: "PATCH",
+      }
+    )
       .then((res) => res.json())
       .then((data) => {
         console.log(data);
