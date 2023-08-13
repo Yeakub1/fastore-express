@@ -14,27 +14,27 @@ const Items = () => {
             <p className="text-lg mt-3">MAKE AN ORDER</p>
           </div>
           <div className="w-2/5">
-            <img src={burger} alt="" />
+            <img src={burger} alt="" draggable="false" />
           </div>
         </div>
         <div className="bg-[#EA6E19] text-white flex items-center justify-between p-5 rounded-md">
           <div className="w-3/5">
-            <h1 className="text-xl font-semibold">SPECIAL ZAMBO BURGER</h1>
+            <h1 className="text-xl font-semibold">SPECIAL ZAMBO CAKE</h1>
             <p className="text-lg mt-3">Get 20% Flat Discount On This Week</p>
             <p className="text-lg mt-3">MAKE AN ORDER</p>
           </div>
           <div className="w-2/5">
-            <img src={cake} alt="" />
+            <img src={cake} alt="" draggable="false" />
           </div>
         </div>
         <div className="bg-[#6B371C] text-white flex items-center justify-between p-5 rounded-md">
           <div className="w-3/5">
-            <h1 className="text-xl font-semibold">SPECIAL ZAMBO BURGER</h1>
+            <h1 className="text-xl font-semibold">SPECIAL ZAMBO PIZZA</h1>
             <p className="text-lg mt-3">Get 20% Flat Discount On This Week</p>
             <p className="text-lg mt-3">MAKE AN ORDER</p>
           </div>
           <div className="w-2/5">
-            <img src={pizza} alt="" />
+            <img src={pizza} alt="" draggable="false" />
           </div>
         </div>
       </div>
