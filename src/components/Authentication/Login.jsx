@@ -55,7 +55,7 @@ const Login = () => {
           name: loginUser.displayName,
           email: loginUser.email,
         };
-        fetch("http://localhost:5173", {
+        fetch("http://localhost:5000/users", {
           method: "POST",
           headers: {
             "content-type": "application/json",

@@ -83,7 +83,7 @@ const Navbar = () => {
               </Link>
             </li>
             <li>
-              <ActiveLink to="/admission">Contact</ActiveLink>
+              <ActiveLink to="/">Contact</ActiveLink>
             </li>
           </ul>
         </div>
@@ -97,13 +97,11 @@ const Navbar = () => {
             {user?.email ? (
               <>
                 <li>
-                  <ActiveLink className="mr-3" to="/myCollege">
+                  <ActiveLink className="mr-3" to="/dashboard">
                     Dashbord
                   </ActiveLink>
                 </li>
-                <li>
-                 
-                </li>
+                <li></li>
                 <Link
                   to="userprofile"
                   className="hover-text h-10 w-10 ml-4 cursor-pointer"

@@ -1,6 +1,6 @@
 import { useContext } from "react";
 import Swal from "sweetalert2";
-import { useLocation, useNavigate } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import useCart from "../../../hooks/useCart";
 import { AuthContext } from "../../../Provider/AuthProvider";
 
@@ -66,13 +66,19 @@ const FoodCard = ({ item }) => {
       </p>
       <div className="card-body flex flex-col items-center">
         <h2 className="card-title">{name}</h2>
-        <div className="card-actions justify-end">
+        <div className="card-actions justify-end gap-10">
           <button
             onClick={() => handleAddToCart(item)}
             className="btn btn-outline bg-slate-100 border-0 border-b-4 border-orange-400 mt-4"
           >
             Add to Cart
           </button>
+
+          <Link to={`/details/${_id}`}>
+            <button className="btn btn-outline bg-slate-100 border-0 border-b-4 border-orange-400 mt-4">
+              Details
+            </button>
+          </Link>
         </div>
       </div>
     </div>
